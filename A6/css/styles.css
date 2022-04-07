@@ -1,0 +1,294 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+body{
+	font-family: 'Work Sans', sans-serif;
+	background-color: #212121;
+	color: white;
+}
+.about, .menu, .reserve, .contact{
+	min-height: 500px;
+	background-color: #212121;
+}
+/*----------HEADER-----------*/
+header img{
+	padding: 5px;
+}
+header{
+	position: fixed;
+	font-size: 18px;
+	top: 0;
+	left: 0;
+	padding: 0 15px;
+	background: #3d3d3d;
+	width: 100%;
+	box-sizing: border-box;
+	box-shadow: 1px 0px 10px 3px black;
+}
+header nav{
+	float: right;
+}
+header nav ul{
+	margin: 0;
+	padding: 0;
+	display: flex;
+}
+header nav ul li{
+	list-style: none;
+	position: relative;
+}
+header nav ul li a{
+	display: block;
+	height: 50px;
+	line-height: 55px;
+	padding: 0 20px;
+	color: white;
+	text-decoration: none;
+}
+header nav ul li a:hover{
+	text-decoration: underline; 
+	color: #83c3fc;
+}
+/*-----MENU BUTTON-----*/
+/* all menu button help via youtube video: https://www.youtube.com/watch?v=gt8zOLQ8A0w */
+.menuIcon{
+	float: right;
+	cursor: pointer;
+	display: none;
+	margin-top: 20px;
+}
+/*--------------MAIN CONTENT-----------------*/
+div{
+	margin: 25px 0;
+}
+#chef{
+	width: 100%;
+}
+h2{
+	text-align: center;
+	margin: 15px;
+}
+hr{
+	margin: 0px 20px 0px 20px;
+}
+/*-----------ABOUT STYLES-----------------*/
+.about p, .about img {
+	margin: 30px 15px 30px 15px;
+	padding: 0 15px;
+}
+.about img{
+	margin: 15px 0;
+}
+.aboutImg{
+	display: inline-block;
+	text-align: center;
+}
+/*------------MENU STYLES-------------------*/
+.menu h3{
+	font-style: italic;
+	font-size: 20px;
+	text-align: center;
+	margin: 15px;
+}
+/* menu items should be closer to the middle for easier reading */
+.menu .item{
+	display: inline-block;
+	margin: 5px 30px;
+	padding: 0px 30px;
+	text-align: left;
+}
+.menu .price{
+	display: inline-block;
+	margin: 5px 30px;
+	padding: 0px 30px;
+	float: right;
+}
+/*------------CONTACT + RESERVATION STYLES-----------------*/
+.contact img, .reserve img{
+	margin-left: 13px;
+}
+.contact p{
+	margin: 30px 30px 10px 30px;
+}
+form{
+	margin: 15px;
+	padding: 15px;
+}
+input{
+	border-radius: 5px;
+	border: none;
+	padding: 2px 2px 2px 5px;
+	background-color: #5b5b5b;
+	color: white;
+	font-size: 12px;
+}
+input::placeholder, textarea::placeholder{
+	color: #a8a8a8;
+}
+textarea{
+	background-color: #5b5b5b;
+	color: white;
+	border: none;
+	vertical-align: top;
+	padding: 3px;
+	font-size: 12px;
+}
+button{
+	padding: 0px 5px;
+	opacity: .9;
+	vertical-align: bottom;
+	font-size: 12px;
+}
+/*-----------------FOOTER----------------*/
+footer{
+	overflow: hidden;
+	font-size: 18px;
+	margin-top: 25px;
+	bottom: 0;
+	left: 0;
+	padding: 0 15px;
+	background: #636060;
+	width: 100%;
+	box-sizing: border-box;
+}
+footer nav{
+	float: right;
+}
+footer nav ul{
+	margin: 0;
+	padding: 0;
+	display: flex;
+}
+footer nav ul li{
+	list-style: none;
+	position: relative;
+}
+
+footer nav ul li a{
+	display: block;
+	height: 50px;
+	line-height: 50px;
+	padding: 0 20px;
+	color: white;
+	text-decoration: none;
+}
+footer nav ul li a:hover{
+	text-decoration: underline; 
+	color: #96c0ff;
+}
+/*-------------RESPONSIVE SITE STLYING--------------*/
+/* resonsive site help for hidding and displaying content via: https://www.youtube.com/watch?v=gt8zOLQ8A0w /*
+/*-------------MOBILE STYLES--------------*/
+@media only screen and (max-width: 500px){ /* max screen width of a "mobile" device is 500px because tablets usually won't go below this. 
+											  anything below 500px will be considered a mobile device bc of this */
+  	.menuIcon{
+		display: inline-block;
+	}
+	header{
+		position: absolute;
+		max-height: 55px;
+	}
+	header nav{
+		display: none;
+	  	position: absolute;
+	  	width: 100%;
+	  	height: calc(100vh - 50px);
+	  	background: #3d3d3d;
+	  	top: 55px;
+	  	left: 0;
+	}
+	header nav ul{
+  		display: block;
+  		text-align: center;
+  	}
+  	#chef{
+  		margin-top: 50px;
+  	}
+  	.about p{
+  		text-align: center;
+  	}
+  	/* images should be smaller on mobile screen because 400px is too large */
+  	.about img{
+  		max-width: 325px;
+  		max-height: 190px;
+  	}
+  	/* make it easier to click on small mobile screens*/
+  	button{
+  		padding: 5px;
+  		border-radius: 5px;
+  	}
+  	.reserve img, .contact img{
+  		max-width: 325px;
+  		max-height: 190px;
+  		margin-bottom: 25px;
+  		margin-right: auto;
+  		margin-left: auto;
+  	}
+  	.reserve{
+  		text-align: center;
+  	}
+  	.contact{
+  		text-align: center;
+  	}
+  	.contact button{
+  		display: block;
+  		margin: 0 auto;
+  		margin-top: 15px;
+  	}
+  	footer nav{
+  		float: none;
+  	}
+  	footer nav ul{
+  		display: block;
+  		text-align: center;
+  	}
+ }
+/*--------------TABLET STYLES-------------*/
+@media only screen and (min-width: 501px) and (max-width: 885px) { /* 501 because mobile max is 500, need 1 above. Tablets screen sizes won't go below
+																	  500px, nor will it go above 960px (which is the min desktop/laptop screen size) 
+																	  so this should be our range. */
+	.menuIcon{
+		display: inline;
+	}
+	header{
+		position: absolute;
+		max-height: 55px;
+	}
+	header nav{
+		display: none;
+	  	position: absolute;
+	  	width: 100%;
+	  	height: calc(100vh - 50px);
+	  	background: #3d3d3d;
+	  	top: 55px;
+	  	left: 0;
+	}
+	header nav ul{
+  		display: block;
+  		text-align: center;
+  	}
+  	#chef{
+  		margin-top: 50px;
+  	}
+  	.about p{
+  		text-align: center;
+  	}
+  	.reserve img, .contact img{
+  		display: block;
+  		margin-bottom: 25px;
+  		margin-left: auto;
+  		margin-right: auto;
+  		width: 50%;	
+  	}
+  	.reserve, .contact{
+  		text-align: center;
+  	}
+  	footer nav{
+  		float: none;
+  	}
+  	footer nav ul{
+  		display: block;
+  		text-align: center;
+  	}
+}

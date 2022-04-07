@@ -1,0 +1,13 @@
+Free to use images generated from:
+https://www.pexels.com/royalty-free-images/
+
+Form data to JSON via:
+https://api.jquery.com/serializeArray/
+
+Normalize: 
+https://necolas.github.io/normalize.css
+
+https://www.w3schools.com/html/html_links.asp
+
+Menu button help:
+https://www.youtube.com/watch?v=gt8zOLQ8A0w

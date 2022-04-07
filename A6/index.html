@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<title>Chez Rebecca</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" href="css/normalize.css">
+		<link rel="stylesheet" href="css/styles.css">
+		<link href="https://fonts.googleapis.com/css?family=Work+Sans" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Great+Vibes" rel="stylesheet">
+		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css">
+	</head>
+	<body>
+		<!-- jump to certain part of page learnt from: https://www.w3schools.com/html/html_links.asp -->
+		<header>
+			<img src="img/logo.png" width="40" height="40" alt="Logo">
+			<nav class ="topNav" id="myTopNav">
+				<ul>
+					<li><a href="index.html">Home</a></li>
+					<li><a href="index.html#aboutJump">About</a></li>
+					<li><a href="index.html#menuJump">Menu</a></li>
+					<li><a href="index.html#reserveJump">Reservations</a></li>
+					<li><a href="index.html#contactJump">Contact</a></li>
+				</ul>
+			</nav>
+			<div class="menuIcon"><i class="fas fa-bars" onclick="dropdown()"></i></div>
+		</header>
+		<main>
+			<img id="chef" src="img/chef.jpg" alt="Chef">
+			<!-- START OF ABOUT SECTION -->
+			<div class="about" id="aboutJump">
+				<h2>About Us</h2>
+				<hr>
+				<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse eu leo tempor lorem ultrices euismod sit amet sit amet ante. Vestibulum lobortis id augue porta efficitur. Curabitur laoreet, dui eget dapibus dapibus, felis tortor iaculis sapien, ac elementum dolor dolor vitae libero. Nunc venenatis neque id dignissim volutpat. Fusce pellentesque enim eu erat laoreet, eu tempor ipsum commodo. Fusce ac risus augue. Nulla nulla nibh, vulputate porttitor orci vel, interdum imperdiet massa. Integer ullamcorper tristique eros ut fermentum. Pellentesque faucibus velit sagittis enim feugiat sollicitudin. Donec eget odio eu urna condimentum dignissim non quis dui. Quisque maximus elit vel diam gravida, in convallis leo volutpat. Nunc in bibendum risus. In elementum, ante sed fermentum congue, odio nibh ultrices libero, at aliquet lorem ante non felis. Cras scelerisque sodales enim vitae facilisis. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Proin aliquam lobortis dolor et facilisis.
+				<br><br>
+				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Vestibulum et laoreet libero, et congue neque. Sed ut vehicula massa. Pellentesque id dignissim justo. Integer eget magna turpis. Aliquam bibendum facilisis odio, et volutpat eros ultricies sed. Maecenas et laoreet erat, sit amet posuere ligula. Aliquam vulputate ullamcorper auctor. Suspendisse vitae est a est convallis elementum. Integer feugiat condimentum dignissim. Cras suscipit quis lectus vitae eleifend. Nulla facilisi. Maecenas ultricies nisl vel leo elementum, sit amet lobortis turpis maximus. Integer pretium id metus ac mattis. In vulputate iaculis mauris vitae tempor. Donec maximus eros nisi, hendrerit sodales mi rutrum ut. Curabitur at dignissim est, eu interdum dui.
+				<br><br>
+				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Nunc et magna odio. Proin lobortis lectus mauris, ac placerat purus scelerisque ut. Donec nunc elit, porttitor at sodales in, ullamcorper et leo. Nam euismod vitae mi id vulputate. Vivamus id porta nisi. Phasellus sollicitudin feugiat lacinia. Curabitur egestas erat non elit euismod mollis. Morbi metus nulla, rhoncus ut commodo id, consequat sit amet libero. Sed id dolor eleifend, viverra leo ut, maximus lorem. Vestibulum vulputate mi eget justo facilisis, eu egestas augue cursus. Suspendisse sem massa, gravida id posuere nec, mattis a nulla. Nam cursus sed tortor et viverra.</p>
+				<div class="aboutImg">
+					<img src="img/pasta.jpg" width="400" height="265" alt="Pasta Dish">
+					<img src="img/steak.jpg" width="400" height="265" alt="Steak Dish">
+					<img src="img/chicken.jpg" width="400" height="265" alt="Chicken Dish">
+					<img src="img/salmon.jpg" width="400" height="265" alt="Salmon Dish">
+				</div>
+			</div>
+			<!-- END OF ABOUT SECTION -->
+			<!-- START OF MENU SECTION -->
+			<div class="menu"  id="menuJump">
+				<h2>Menu</h2>
+				<hr><br>
+				<h3>Appetizers</h3>
+					<p class="item">Appetizer item</p><p class="price">$$</p><br>
+					<p class="item">Appetizer item</p><p class="price">$$</p><br>
+					<p class="item">Appetizer item</p><p class="price">$$</p><br>
+					<p class="item">Appetizer item</p><p class="price">$$</p><br>
+				<h3>Mains</h3>
+					<p class="item">Main item</p><p class="price">$$$</p><br>
+					<p class="item">Main item</p><p class="price">$$$</p><br>
+					<p class="item">Main item</p><p class="price">$$$</p><br>
+					<p class="item">Main item</p><p class="price">$$$</p><br>
+					<p class="item">Main item</p><p class="price">$$$</p><br>
+					<p class="item">Main item</p><p class="price">$$$</p><br>
+				<h3>Dessert</h3>
+					<p class="item">Dessert item</p><p class="price">$</p><br>
+					<p class="item">Dessert item</p><p class="price">$</p><br>
+					<p class="item">Dessert item</p><p class="price">$</p><br>
+					<p class="item">Dessert item</p><p class="price">$</p><br>
+
+			</div>
+			<!-- END OF MENU SECTION -->
+			<!-- START OF RESERVATION SECTION -->
+			<div class="reserve" id="reserveJump">
+				<h2>Make a Reservation</h2>
+				<hr>
+				<form>
+					Name:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" name="name" placeholder="Peter Parker"><br><br>
+					Phone Number:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="tel" name="phone" placeholder="(xxx) xxx-xxxx"><br><br>
+					Number of People:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="number" name="people" placeholder="0"><br><br>
+					Date:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="date" name="date"><br><br>
+					Time:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="time" name="time"><br><br>
+					<button>Make Reservation</button>
+				</form>
+				<img src="img/couple.jpg" width="400" height="265" alt="Couple">
+				<img src="img/table.jpg" width="400" height="265" alt="Table">
+				<img src="img/dining.jpg" width="400" height="265" alt="Dining">
+			</div>
+			<!-- END OF RESERVATION SECTION -->
+			<!-- START OF CONTACT SECTION -->
+			<div class="contact" id="contactJump">
+				<h2>Contact Us</h2>
+				<hr>
+				<p>Want to send us a message? Enter your information and click submit!</p>
+				<form id="contactForm">
+					Name:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" name="name" placeholder="Peter Parker"><br><br>
+					Email:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="email" name="email" placeholder="abcde@gmail.com"><br><br>
+					Message:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<textarea rows="5" cols="40" placeholder="Enter Text Here..." name="message"></textarea><br><br>
+					<button>Submit</button>
+				</form>
+				<img src="img/bar.jpg" width="400" height="265" alt="Bar">
+				<img src="img/server.jpg" width="400" height="265" alt="Server">
+				<img src="img/dine.jpg" width="400" height="265" alt="Dine">
+			</div>
+			<!-- END OF CONTACT SECTION -->
+		</main>
+		<!-- START OF FOOTER -->
+		<footer>
+			<nav>
+				<ul>
+					<li><a href="index.html">Home</a></li>
+					<li><a href="index.html#aboutJump">About</a></li>
+					<li><a href="index.html#menuJump">Menu</a></li>
+					<li><a href="index.html#reserveJump">Reservations</a></li>
+					<li><a href="index.html#contactJump">Contact</a></li>
+				</ul>
+			</nav>
+		</footer>
+		<script src="js/scripts.js"></script>
+	</body>
+</html>
